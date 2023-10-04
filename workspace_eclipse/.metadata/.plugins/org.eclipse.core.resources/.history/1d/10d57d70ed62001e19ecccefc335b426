@@ -1,0 +1,9 @@
+package br.inatel.labs.labjpa.entity;
+
+import java.util.List;
+
+public class Produto {
+	private Long id;
+	private String descricao;
+	private List<Fornecedor> listaFornecedor;
+}

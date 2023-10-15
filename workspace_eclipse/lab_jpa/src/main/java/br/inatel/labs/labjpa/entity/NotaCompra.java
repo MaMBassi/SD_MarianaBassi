@@ -27,6 +27,17 @@ public class NotaCompra {
 	@ManyToOne
 	private Fornecedor fornecedor;
 	
+	
+	public NotaCompra(@NotNull @Past LocalDate dataEmissao, Fornecedor fornecedor) {
+		super();
+		this.dataEmissao = dataEmissao;
+		this.fornecedor = fornecedor;
+	}
+	
+	public NotaCompra() {
+		// TODO Auto-generated constructor stub
+	}
+
 	@OneToMany(mappedBy = "notaCompra")
 	private List<NotaCompraItem> listaNotaCompraItem;
 	

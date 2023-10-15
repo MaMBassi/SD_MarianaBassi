@@ -21,6 +21,15 @@ public class Fornecedor {
 	@Size(min = 2, max = 200)
 	private String razaoSocial;
 	
+	public Fornecedor() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Fornecedor(@NotNull @Size(min = 2, max = 200) String razaoSocial) {
+		super();
+		this.razaoSocial = razaoSocial;
+	}
+
 	@ManyToMany
 	private List<Produto> listaProduto;
 

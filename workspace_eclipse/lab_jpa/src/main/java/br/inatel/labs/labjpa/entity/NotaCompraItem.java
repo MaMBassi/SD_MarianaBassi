@@ -31,6 +31,19 @@ public class NotaCompraItem {
 	@ManyToOne
 	private Produto produto;
 	
+	
+	public NotaCompraItem(NotaCompra notaCompra, Produto produto,@NotNull @Positive BigDecimal valorCompraProduto, @NotNull @Positive Integer quantidade) {
+		super();
+		this.valorCompraProduto = valorCompraProduto;
+		this.quantidade = quantidade;
+		this.notaCompra = notaCompra;
+		this.produto = produto;
+	}
+
+	public NotaCompraItem() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public BigDecimal getCalculoTotalItem() {
 		return valorCompraProduto.multiply( BigDecimal.valueOf(quantidade) );
 	}

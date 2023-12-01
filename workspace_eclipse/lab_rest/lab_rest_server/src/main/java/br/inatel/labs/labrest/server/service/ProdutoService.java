@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.Random;
 
 import org.springframework.stereotype.Service;
 
@@ -32,4 +33,21 @@ public class ProdutoService {
 	public Optional<Produto> findById(Long id){
 		return produtos.stream().filter(p->p.getId() == id).findFirst();
 	}
+	
+	public Produto create(Produto p) {
+		long id = new Random().nextLong();
+		p.setId(id);
+		produtos.add(p);
+		return p;
+	}
+	
+	public void update(Produto p) {
+		produtos.remove(p);
+		produtos.add(p);
+	}
+	
+	public void remove(Produto p) {
+		produtos.remove(p);
+	}
+	
 }

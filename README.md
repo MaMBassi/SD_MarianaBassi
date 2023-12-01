@@ -14,7 +14,7 @@
 ### :books: Exercícios Práticos
 
 - [x] Laboratório de Middleware: JPA e Hibernate
-- [ ] Laboratório 02: Rest Server e Rest Client
+- [x] Laboratório 02: Rest Server e Rest Client
 
 ### :point_right: Tecnologias
 

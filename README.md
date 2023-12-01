@@ -15,13 +15,14 @@
 
 - [x] Laboratório de Middleware: JPA e Hibernate
 - [x] Laboratório 02: Rest Server e Rest Client
+- [x] Laboratório 03: Mqtt
 
 ### :point_right: Tecnologias
 
 - Gerenciador de dependências: Maven
 - Linguagem de Programação: Java
 - IDE: Eclipse
-- Tecnologias: Jakarta e SpringBoot
+- Tecnologias: Jakarta, SpringBoot, Mosquitto, Paho
 - Testes: JUnit
 - Diagrama UML: Lucidchart
 
